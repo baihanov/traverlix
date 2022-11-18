@@ -12,4 +12,70 @@ a {
   margin: 0 auto;
 }
 
+body {
+  font-family: "Inter" sans-serif;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1100px) {
+  #header .header--car__cart a {
+    display: none;
+  }
+}
+@media (max-width: 376px) {
+  #header .header--car h1 {
+    font-size: 30px !important;
+  }
+}
+#header {
+  padding-top: 1%;
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header--car h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  color: #1F39BA;
+}
+#header .header--car span {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  color: #474747;
+}
+#header .header--car__cart a {
+  margin: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #3b3bd0;
+  transition: 0.4s;
+}
+#header .header--car__cart a:hover {
+  border-bottom: 2px solid #3b3bd0;
+  color: red;
+}
+#header .header--car__cart button {
+  background: #3b3bd0;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #474747;
+  transition: 0.4s;
+}
+#header .header--car__cart button:hover {
+  background: transparent;
+  color: #474747;
+  box-shadow: 0 0 5px #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
+}
+
 /*# sourceMappingURL=style.css.map */

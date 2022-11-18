@@ -1,3 +1,47 @@
 @import "mixin";
 @import "global";
+@import "verabels";
+@import "media";
 
+#header{
+  padding-top: 1%;
+  .header{
+    @include center();
+    &--car {
+
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52px;
+        color: $reb;
+      }
+
+      span {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52px;
+        color: $add;
+      }
+
+      &__cart {
+
+        a {
+          margin: 40px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 26px;
+          color: $blu;
+          transition: .4s;
+          &:hover{
+            border-bottom: 2px solid $blu;
+            color: red;
+          }
+        }
+
+        button {
+          @include btn();
+        }
+      }
+    }
+  }
+}
